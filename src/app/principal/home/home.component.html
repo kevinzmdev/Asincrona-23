@@ -1,0 +1,44 @@
+<section class="container mb-2 p-5 w-50">
+    <section class="card shadow-2-strong" style="border-color: rgb(46, 46, 153)">
+      <section class="card-body p-4">
+        <h1 class="text-center mb-5">Calcular Operación</h1>
+        <div class="contenedor">
+          <mat-form-field>
+            <input matInput [(ngModel)]="valor1" type="number" placeholder="Ingrese primer valor">
+          </mat-form-field>
+    
+          <mat-form-field>
+            <input matInput [(ngModel)]="valor2" type="number" placeholder="Ingrese segundo valor">
+          </mat-form-field>
+          
+          <section class="text-center mb-3">
+            <mat-slide-toggle class="mb-3 m-3" [(ngModel)]="opcion1">Sumar</mat-slide-toggle>
+            <mat-slide-toggle class="mb-3 m-3" [(ngModel)]="opcion2">Restar</mat-slide-toggle>
+            <mat-slide-toggle class="mb-3 m-3" [(ngModel)]="opcion3">Multiplicar</mat-slide-toggle>
+            <mat-slide-toggle class="mb-3 m-3" [(ngModel)]="opcion4">Dividir</mat-slide-toggle>
+          </section>
+          <button class="mb-4" mat-raised-button color="primary" (click)="Calcular()">Calcular</button>
+          <p class="fw-bold">{{resultado}}</p>
+        </div>
+      </section>
+    </section>
+  </section>
+  
+
+  <!-- <div class="contenedor py-5">
+    <mat-form-field>
+      <input matInput [(ngModel)]="valor1" type="number" placeholder="Ingrese primer valor">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="valor2" type="number" placeholder="Ingrese segundo valor">
+    </mat-form-field>
+    
+      <mat-slide-toggle  [(ngModel)]="opcion1">Sumar</mat-slide-toggle>
+      <mat-slide-toggle  [(ngModel)]="opcion2">Restar</mat-slide-toggle>
+      <mat-slide-toggle  [(ngModel)]="opcion3">Multiplicar</mat-slide-toggle>
+      <mat-slide-toggle  [(ngModel)]="opcion4">Dividir</mat-slide-toggle>
+
+    <button class="mb-4" mat-raised-button color="primary" (click)="Calcular()">Calcular</button>
+    <p>{{resultado}}</p>
+  </div> -->
